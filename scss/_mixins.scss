@@ -1,0 +1,12 @@
+@mixin list($flex) {
+    list-style-type: none;
+    padding: 0;
+    display: $flex;
+}
+
+@mixin devan($size) {
+    
+    background-repeat: no-repeat;
+    background-size:$size;
+    background-position:center;
+}

@@ -1,0 +1,187 @@
+.razmer{
+    border: 1px solid #343434;
+    padding: 0;
+    &_list{
+        @include list(flex);
+        justify-content: space-between;
+        background-color:#F2F3F5;
+        margin: 0;
+        margin-bottom: 47px;    
+    }
+    
+    &_item{
+        padding: 29px 87px;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        border-bottom:  1px solid#343434;
+        border-right:  1px solid#343434;
+        white-space: nowrap;
+        color: #343434;
+        &_padding{
+            padding: 29px 110px;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            border-bottom:  1px solid#343434;
+            border-right:  1px solid#343434;
+            color: #343434;
+            white-space: nowrap;
+        }
+    }
+
+    &_rasm{
+        display: none;
+    }
+
+    .active_list{
+        background-color: #fff;
+        border-bottom:none ;
+    }
+
+    &_ummumiy{
+        display: flex;
+        align-items: center;
+    }
+
+    &_inner_list{
+        @include list(flex);
+        flex-direction: column;
+        gap: 52px;
+        margin-left: 80px; 
+    }
+    
+    &_inner_item{
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #343434;
+        &::before{
+            content: "\2022";
+            color:#FF9619;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+
+    &_big_list{
+        @include list(flex);
+        flex-direction:column;
+        gap: 45px;
+        margin-top: 15px;
+    }
+
+    &_big_item{
+        font-family: Raleway;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        margin-left: 63px;
+    }
+
+    &_padding{
+        background-color:#FF9619;
+        padding: 17px 32px 14px 30px;
+        color: #ffffff;
+        text-transform: uppercase;
+        width: 342px;
+        margin-left: auto;  
+        margin-right: 0;
+        margin-top: 20px;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        
+        &:hover{
+            cursor: pointer;
+            background-color: #f8ae52;
+        }
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .razmer{
+        border: none;
+        &_list{
+            background-color: #fff;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .active_list{
+            background-color:#F2F3F5;
+            border: none;
+        }
+        
+        &_item{
+            background-color:#F2F3F5;
+            padding: 19px 27px;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            border:none;
+            white-space: nowrap;
+            color: #343434;
+            &_padding{
+                background-color:#F2F3F5;
+                padding: 19px 107px;
+                text-align: center;
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                letter-spacing: 0.1em;
+                text-align: left;
+                border:none;
+                color: #343434;
+                white-space: nowrap;
+            }
+        }
+
+        &_rasm{
+            display: inline-block;
+        }
+    
+        &_ummumiy{
+            display: none;
+        }
+
+        &_padding{
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+    
+}

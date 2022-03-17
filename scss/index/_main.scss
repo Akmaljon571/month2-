@@ -1,0 +1,532 @@
+.main{
+    position: relative;
+   .search{
+       margin-top: 60px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-bottom: 68px;
+
+       &_select{
+           background-color:transparent;
+           border: none;
+           cursor: pointer;
+           font-family: Raleway;
+           font-size: 18px;
+           font-style: normal;
+           font-weight: 400;
+           line-height: 20px;
+           letter-spacing: 0em;
+           text-align: left;
+       }
+
+       &_div{
+           width:452px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       &_button{
+           background-color:transparent;
+           border: none;
+           cursor: pointer;
+       }
+
+       &_input--div{
+           border: 1px solid #343434;
+           padding:9px 10px ;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           width: 270px;
+       }
+
+       &_input{
+           border: none;
+           font-family: Raleway;
+           font-size: 18px;
+           font-style: normal;
+           font-weight: 500;
+           line-height: 23px;
+           letter-spacing: 0.05em;
+           text-align: left;
+           color:#D1D1D1;
+           width: 220px;
+       }
+
+       &_span{
+           display: none;
+       }
+
+   }
+
+   .section{
+       &_list{
+           @include list(flex);
+           flex-wrap: wrap;
+           align-items: center;
+           gap: 30px;
+       }
+
+       &_link{
+           width: 570px;
+           margin-bottom: 38px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           background-color: #F2F3F5;
+           height: 278px;
+           padding-right: 20px;
+           text-decoration: none;
+           color: #343434;
+       }
+
+       &_div1{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image14.png);
+           @include devan(auto);
+           background-color:#F2F3F5;
+       }
+
+       &_div2{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image16.png);
+           @include devan(contain);
+       }
+
+       &_div3{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image1.png);
+           @include devan(contain);
+       }
+
+       &_div4{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image2.png);
+           @include devan(auto);
+       }
+
+       &_div5{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image3.png);
+           @include devan(auto);
+       }
+
+       &_div6{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image4.png);
+           @include devan(auto);
+       }
+
+       &_div7{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image5.png);
+           @include devan(auto);
+       }
+
+       &_div8{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image6.png);
+           @include devan(auto);
+       }
+
+       &_div9{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image7.png);
+           @include devan(auto);
+       }
+
+       &_div10{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image8.png);
+           @include devan(auto);
+       }
+
+       &_div11{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image9.png);
+           @include devan(auto);
+       }
+
+       &_div12{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image10.png);
+           @include devan(auto);
+       }
+
+       &_div13{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image11.png);
+           @include devan(auto);
+       }
+
+       &_div14{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image12.png);
+           @include devan(contain);
+       }
+
+       &_div15{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image13.png);
+           @include devan(auto);
+       }
+
+       &_div16{
+           width: 270px;
+           height: 176px;   
+           background-image: url(./../img/image8.png);
+           @include devan(contain);
+       }
+
+       &_heidr{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        width: 70px; 
+        margin-bottom: 15px;   
+        white-space: nowrap;    
+       }
+
+       &_text{
+        font-family: Raleway;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 15px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        width: 259px;  
+        margin: 0;      
+       }
+   }
+
+   .buttom{
+       &_list{
+           margin: 0 auto;
+           @include list(flex);
+           width: 102px;
+           justify-content: space-between;
+           margin-bottom: 60px;
+        }
+
+       &_button{
+           background-color:transparent;
+           border: none;
+           color: rgb(52, 52, 52,50%);
+           cursor: pointer;
+           
+        }
+
+       &_link{
+           padding: 14px 25px;
+           white-space: nowrap;
+           margin-left: auto;
+           margin-right: auto;
+           text-decoration: none;
+           color: #ffffff;
+           background-color:#FF9619;
+           font-family: Raleway;
+           font-size: 16px;
+           font-style: normal;
+           font-weight: 700;
+           line-height: 24px;
+           letter-spacing: 0em;
+           position: absolute;
+           margin-left: 43%;
+
+           &:hover{
+            background-color: #f8ae52;
+            cursor: pointer;
+        }
+        }
+
+    }
+
+   .active_button{
+       color: #343434;
+   }
+
+   .active_none{
+       color: rgb(52, 52, 52,50%);
+   }
+}
+
+@media only screen and(max-width:375px) {
+    .main{
+        .search{
+            margin-top: 31px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-wrap: wrap ;
+     
+            &_select{
+                font-family: Raleway;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0em;
+                text-align: left;                  
+            }
+     
+            &_div{
+                width:353px;
+                
+            }
+     
+            &_button{
+                display: none;
+            }
+     
+            &_input--div{
+                border: 1px solid #343434;
+                padding:9px 10px ;
+                width: 290px;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+     
+            &_input{
+                border: none;
+                font-family: Raleway;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 23px;
+                letter-spacing: 0.05em;
+                text-align: left;
+                color:#D1D1D1;
+                
+            }
+
+            &_span{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color:#343434;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+            }
+
+            &_span1{
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background-color:#343434;
+                margin-right: 7px;
+                cursor: pointer;
+            }
+
+            &_ummumiy{
+                margin-right: 42px
+            }
+        }
+     
+    .section{
+        &_list{
+            @include list(flex);
+            flex-wrap: wrap;
+            align-items: center;
+            text-align: center;
+            
+        }
+        
+        &_link{
+            width: 150px;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-color:#ffffff;
+            height:auto;
+            padding-right: 0px;
+            margin: 0 auto;
+        }
+ 
+        &_div1{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image14.png);
+            @include devan(160px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div2{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image16.png);
+            @include devan(200px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div3{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image1.png);
+            @include devan(200px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div4{
+            width: 160px;
+            height: 170px;   
+            background-image: url(./../img/image2.png);
+            @include devan(200px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div5{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image3.png);
+            @include devan(200px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div6{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image4.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div7{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image5.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div8{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image6.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div9{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image7.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div10{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image8.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div11{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image9.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div12{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image10.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div13{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image11.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div14{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image12.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div15{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image13.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_div16{
+            width: 160px;
+            height: 176px;   
+            background-image: url(./../img/image8.png);
+            @include devan(142px);
+            background-color:#F2F3F5;
+        }
+ 
+        &_heidr{
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: left;
+            width: 70px; 
+            margin: 0;
+            margin-bottom: 15px;   
+            
+        }
+ 
+        &_text{
+         display: none;    
+        }
+    }
+
+    .buttom_link{
+        margin-left: 30%;
+        &:hover{
+            background-color: #f8ae52;
+            cursor: pointer;
+        }
+    }
+
+    .active_button{
+        color: rgb(52, 52, 52,50%);
+    }
+
+    .active_none{
+        color: #343434;
+    }
+  }
+}

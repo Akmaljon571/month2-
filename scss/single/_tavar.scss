@@ -1,0 +1,148 @@
+.tavar{
+    margin-top: 160px;
+    margin-bottom: 0px;
+
+    &_span{
+        font-family: Raleway;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin: 0;
+        color: #FF9619;;
+    }
+
+    &_text{
+        font-family: Raleway;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 41px;
+        letter-spacing: 0em;
+        text-align: left;
+        display: inline;
+        margin: 0;
+        margin-left: -7px;
+    } 
+
+    &_link{
+        text-decoration: none;
+        color: #343434
+    }
+    
+    &_list{
+        @include list(flex);
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &_item{
+        text-align: center;
+    }
+
+    &_item1{
+        text-align: center;
+    }
+
+    &_h3{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &_image14{
+        width: 270px;
+        height: 278px;
+        background-color: #F2F3F5;
+        background-image: url(./../img/image14.png);
+        @include devan(171px)
+    }
+
+    &_image16{
+        width: 270px;
+        height: 278px;
+        background-color: #F2F3F5;
+        background-image: url(./../img/image16.png);
+        @include devan(171px)
+    }
+
+    &_image1{
+        width: 270px;
+        height: 278px;
+        background-color: #F2F3F5;
+        background-image: url(./../img/image1.png);
+        @include devan(171px)
+    }
+    &_image2{
+        width: 270px;
+        height: 278px;
+        background-color: #F2F3F5;
+        background-image: url(./../img/image2.png);
+        @include devan(171px)
+    }
+}
+
+@media only screen and (max-width:375px) {
+
+    .tavar{
+        margin-top: 90px;
+        margin-bottom: 0px;
+    
+        &_span{
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+    
+        &_text{
+            font-family: Raleway;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;            
+        } 
+
+        &_item{
+            text-align: center;
+        }
+    
+        &_h3{
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    
+        &_image14{
+            width: 340px;
+            height: 278px;
+            background-color: #F2F3F5;
+            background-image: url(./../img/image14.png);
+            @include devan(171px)
+        }
+    
+        &_item{
+            display: none;
+        }
+    }
+    
+}

@@ -1,0 +1,92 @@
+.skachat{
+    padding: 0;
+    &_list{
+       @include list (flex);
+       flex-wrap: wrap;
+       gap: 10px;
+    }
+
+    &_item{
+        &:hover{
+            box-shadow: 1px 1px 10px 1px #343434;
+        }
+    }
+}
+
+.vector{
+    max-width: 1200px;
+    max-height: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 198px;
+    margin-bottom: 160px;
+    &_text{
+        white-space: nowrap;
+        font-family: Raleway;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 35px;
+        letter-spacing: 0em;
+        text-align: left;
+        padding: 46px 60px;
+        background-color:transparent;
+        border: 1px solid #FF9619;
+        color: #343434;
+        width: 390px;
+        
+        &:hover{
+            box-shadow: 1px 1px 10px 1px #343434;     
+        }
+      
+    }
+
+    &_span{
+        background-color: #FF9619;
+        border-radius: 50%;
+    }
+
+    &_img{
+       margin: 4px;
+       margin-left: 10px;
+       margin-right: 10px;
+    }
+}
+
+@media only screen and(max-width:375px) {
+    .skachat{
+        margin-top: 151px;
+        margin-bottom: 0px;
+
+        &_list{
+          gap: 5px;
+        }
+
+        &_rasm{
+            width: 375px;
+        }
+    }
+
+    .vector{
+        &_text{
+            font-family: Raleway;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 21px;
+            letter-spacing: 0em;
+            text-align: left;                       
+            height: 47px;
+            padding: 14px 12px;
+            width: 168px;
+        }
+
+        &_img{
+            margin: 0px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    
+}

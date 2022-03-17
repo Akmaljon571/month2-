@@ -1,0 +1,261 @@
+.header{
+    .desktop{
+        margin-top: 52px;
+
+        &_list{
+            @include list(flex);
+            justify-content: space-between;
+            max-width: 1200px;
+            align-items: center;
+        }
+
+        &_item{
+            font-family: Raleway;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            
+        }
+
+        &_link{
+            text-decoration: none;
+            color: #343434;
+            &:hover{
+                color: #FF9619;
+            }
+        }
+
+        &_tel{
+            font-family: Open Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            text-decoration: none;
+            color: #343434;
+
+            &:hover{
+                color: #FF9619;
+            }
+        }
+
+        &_section{
+            font-family: Raleway;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: left;
+            background-color:transparent;
+            color:rgb(52, 52, 52, 70%);
+            border: none;
+        }
+
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .hero{
+        &_list{
+           @include list(flex);
+           justify-content: space-between;
+           max-width: 1300px;
+           gap: 0;
+        }
+        
+        &_item{
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             gap: 0;
+        }
+
+        &_linklar{
+            text-decoration: none;
+            color: #343434;
+        }
+
+        &_rasm1{
+            width: 171px;
+            height: 140px;
+            background-image: url(./../img/uzun_divan.png);
+            @include devan(171px);
+        }
+
+        &_rasm2{
+            width: 171px;
+            height: 140px;
+            background-image: url(./../img/stol.png);
+            @include devan(171px);
+        }
+
+        &_rasm3{
+            width: 171px;
+            height: 140px;            
+            background-image: url(./../img/kreslo.png);
+            @include devan(171px);
+        }
+        
+        &_rasm4{
+            width:171px;
+            height: 140px;
+            background-image: url(./../img/divan.png);
+            @include devan(171px);
+        }
+
+        &_rasm5{
+            width:171px;
+            height: 140px;
+            background-image: url(./../img/burchak.png);
+            @include devan(171px);
+        }
+
+        &_rasm6{
+            width:171px;
+            height: 140px;
+            background-image: url(./../img/stolcha.png);
+            @include devan(171px);
+        }
+
+        &_rasm7{
+            width:171px;
+            height: 140px;
+            background-image: url(./../img/divancha.png);
+            @include devan(171px);
+        }
+
+        &_link{
+            text-decoration: none;
+            margin-top: 7px;
+            width:111px;
+            font-family: Open Sans;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color:#343434;
+
+            &:hover{
+                color: #FF9619;
+                cursor: pointer;
+            }
+        }    
+    }
+
+    .active_text{
+        color: #FF9619;
+    }
+
+    .close{
+        display: none;
+    }
+
+}
+
+@media only screen and(max-width:1200px) {
+    .hero_list{
+        flex-wrap: wrap;
+    }
+}
+
+// 375
+
+@media only screen and (max-width:375px) {
+    .container{
+        max-width: 375px;
+        padding: 20px 19px;
+    }
+
+    .header{
+        .desktop{
+           display: none;
+        }
+
+        .mobile{
+           display: inline-block; 
+
+           &_list{
+               @include list(flex);
+               justify-content: space-between;
+               width: 338px;
+               align-items: center;
+           }
+
+           &_section{
+               background-color:transparent;
+               border:none;
+               color: rgb(52, 52, 52, 70%);
+           }
+
+           &_hamburger{
+               cursor: pointer;
+           }
+
+           .hamburger_button{
+               background-color:transparent;
+               border: none;
+           }
+        }
+
+        .hero{
+            display: none;
+        }
+
+        .close{
+            display: inline-block;
+            margin-left: 138px;
+            position: absolute;
+            z-index: 200;
+            margin-top: -95px;
+            background-color: #ffffff;
+            padding: 28px 31px 28px 20px;
+            width: 239px;
+
+            &_list{
+                @include list (flex);
+                flex-direction: column;
+                justify-content: start;
+                gap: 10px;
+            }
+
+            &_item{
+                width: 171px;
+                font-family: Raleway;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 32px;
+                letter-spacing: 0em;
+                color: #4B4844;
+                &:hover{
+                    color: #FF9619;
+                    cursor: pointer;
+                }
+            }
+            &_button{
+                background-color:transparent;
+                border: none;
+                position: absolute;
+                margin-left: 170px;
+                margin-top: 23px;
+              
+            }
+        }
+
+        .menyu{
+            display: none;
+        }
+
+    }
+}
